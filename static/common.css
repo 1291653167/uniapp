@@ -1,0 +1,35 @@
+.line-2 {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.line-3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.bottom {
+	position: relative;
+}
+
+.bottom::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	transform: scaleY(0.5); //y轴缩放
+}
+
+img {
+	width: 100%;
+}
